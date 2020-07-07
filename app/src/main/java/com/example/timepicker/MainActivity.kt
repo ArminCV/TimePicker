@@ -22,6 +22,7 @@ class MainActivity : AppCompatActivity(){
         val hour = c.get(Calendar.HOUR);
         val minute = c.get(Calendar.MINUTE);
         val tpd = TimePickerDialog(this,
+            // when button is clicked
             TimePickerDialog.OnTimeSetListener(
                 function = {
                     view, h, m -> Toast.makeText(this,
